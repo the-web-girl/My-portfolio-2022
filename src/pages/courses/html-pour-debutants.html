@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML pour débutants</title>
+
+    <link rel="stylesheet" href="../../styles/styles.css">
+</head>
+<body class="article-body">
+    <header class="article-header">
+        <nav>
+            <ul>
+                <li><a href="../../../index.html" class="main-btn"><span class="btn-txt">accueil du portfolio</span></a></li>
+                <li><a href="https://les-archives.web-i.org/" class="main-btn"><span class="btn-txt">contenu de la bibliothèque</span></a></li>
+                <li><a href="https://www.web-i.org/" target="_blank" class="main-btn"><span class="btn-txt">web & i</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-main">
+
+        <h1 class="txt-center">Cours d'HTML pour les débutants</h1>
+        <div class="content-txt">
+            <p>Le HTML (Hypertext Markup Language) est un langage de balisage utilisé pour créer des pages web. Il permet de structurer le contenu d'une page en utilisant des balises pour définir différents éléments tels que les titres, les paragraphes, les images, etc. Dans ce cours, nous allons apprendre les bases du HTML, de sa création à nos jours.</p>
+        </div>
+        
+        
+        <div class="img-center">
+            <img src="../../img/articles/html-css-book.jpg" alt="">
+        </div>
+
+        <div class="content-txt">
+            <h2>Histoire du HTML</h2>
+            <p>Le HTML a été développé par Tim Berners-Lee en 1990 au CERN (Organisation Européenne pour la Recherche Nucléaire) en Suisse. Le premier navigateur web, appelé WorldWideWeb, a été créé en 1991, permettant aux utilisateurs d'accéder à des pages web. La première spécification officielle du HTML a été publiée en 1995 par le W3C (World Wide Web Consortium), l'organisme de standardisation du web.</p>
+
+            <h2>Structure de base du HTML</h2>
+            <p>La structure de base du HTML comprend les éléments suivants :</p>
+            <ul>
+                <li>La balise !DOCTYPE qui indique la version du HTML utilisée</li>
+                <li>La balise html qui entoure tout le contenu de la page</li>
+                <li>La balise head qui contient les informations sur la page tels que le titre, les méta-données, etc.</li>
+                <li>La balise body qui contient le contenu visible de la page</li>
+            </ul>
+    
+            <p>La structure de base du HTML est importante car elle définit l'organisation et la hiérarchie du contenu de la page. Elle permet également aux navigateurs web de comprendre comment afficher la page. La balise !DOCTYPE indique la version du HTML utilisée, ce qui est important pour la compatibilité avec les navigateurs. La balise html entoure tout le contenu de la page et la balise head contient les informations sur la page, telles que le titre, les méta-données, etc. La balise body contient le contenu visible de la page, tel que les titres, les paragraphes, les images, etc.</p>
+    
+            <h2>Les balises HTML</h2>
+            <p>Les balises HTML permettent de définir les différents éléments de la page, ces balises HTML valides jouent un rôle important dans l'accessibilité numérique. Voici une liste non exhaustive de balises couramment utilisées :</p>
+            <ul>
+                <li>h1 à h6 : utilisées pour les titres de différents niveaux, elles permettent aux utilisateurs de comprendre la structure de la page et la hiérarchie du contenu.</li>
+                <li>p : utilisée pour les paragraphes, elle permet de structurer le texte en blocs, facilitant ainsi la lecture.</li>
+                <li>img  : utilisée pour les images, elle permet d'ajouter des descriptions alternatives (alt) pour les utilisateurs non-voyants ou malvoyants.</li>
+                <li>a : utilisée pour les liens, elle permet d'ajouter des textes descriptifs (title) et de créer des liens internes ou externes.</li>
+                <li>ul et li : utilisées pour les listes non-ordonnées, elles permettent de structurer l'information de manière logique et cohérente.</li>
+                <li>ol et li : utilisées pour les listes ordonnées, elles permettent d'indiquer clairement la séquence ou l'ordre des éléments.</li>
+                <li>input : utilisée pour les champs de saisie, elle permet d'ajouter des étiquettes (label) pour décrire le champ et son utilisation.</li>
+                <li>button : utilisée pour les boutons, elle permet d'ajouter des textes descriptifs (title) pour décrire l'action à effectuer.</li>
+                <li>table : utilisée pour créer des tableaux, elle permet de structurer l'information de manière lisible et cohérente.</li>
+                <li>form : utilisée pour créer des formulaires, elle permet aux utilisateurs de saisir des informations et de les envoyer au serveur.</li>
+                <li>label : utilisée pour étiqueter les champs de saisie, elle permet aux utilisateurs de comprendre ce qui est attendu d'eux.</li>
+            </ul>
+            <p>En utilisant ces balises de manière appropriée, les développeurs peuvent aider les utilisateurs à naviguer sur les pages plus facilement et à comprendre la structure de l'information. Les descriptions alternatives (alt) pour les images et les textes descriptifs (title) pour les liens permettent également aux utilisateurs non-voyants ou malvoyants de comprendre le contenu de la page. Enfin, l'utilisation de balises sémantiques (comme header, footer, nav, article...) permettent de décrire la structure de la page et les différents blocs de contenu, facilitant ainsi l'accessibilité et l'interprétation du contenu par les utilisateurs.</p>
+    
+            <h2>Les attributs HTML</h2>
+            <p>Les attributs HTML permettent de donner des informations supplémentaires aux balises. Voici quelques exemples d'attributs couramment utilisés :</p>
+            <ul>
+                <li>src pour spécifier l'emplacement de l'image à afficher</li>
+                <li>alt pour fournir une description textuelle de l'image</li>
+                <li>href pour spécifier l'URL de la page liée</li>
+                <li>class pour attribuer une classe CSS à un élément</li>
+                <li>id pour donner un identifiant unique à un élément</li>
+            </ul>
+    
+            <h2>Les éléments HTML en ligne et en bloc</h2>
+            <p>Les éléments HTML peuvent être soit en ligne, soit en bloc. Les éléments en ligne sont affichés les uns à côté des autres, tandis que les éléments en bloc occupent toute la largeur de la page. Voici quelques exemples d'éléments en ligne et en bloc :</p>
+            <ul>
+                <li>En ligne : a, span, img </li>
+                <li>En bloc : div, p, ul </li>
+            </ul>
+    
+            <h2>Les feuilles de style CSS</h2>
+            <p>Les feuilles de style CSS permettent de définir l'apparence des éléments HTML. Les règles CSS sont appliquées en utilisant des sélecteurs pour cibler les éléments spécifiques. Voici un exemple de règle CSS :</p>
+            <div class="img-center">
+                <img src="../../img/courses/html-img-1.png" alt="">
+            </div>
+
+            <p>Cette règle applique du texte bleu et une taille de police de 16 pixels à tous les éléments "p" de la page.</p>
+    
+            <h2>Conclusion</h2>
+            <p>Le HTML est un langage de balisage essentiel pour la création de pages web. Il permet de structurer le contenu de la page et de définir les différents éléments tels que les titres, les paragraphes, les images, etc. En utilisant des feuilles de style CSS, il est possible de personnaliser l'apparence de ces éléments pour créer des pages web attrayantes et fonctionnelles.</p>
+
+        </div>
+
+    </main>
+    
+    <footer class="footer" role="presentation">
+        <ul>
+            <li>
+                <a href="./src/pages/mentions.html" target="_blank">Mentions légales</a>
+            </li>
+            <li>
+                <p><span class="copyright">©</span>
+                2022 - 
+                <a href="">Web & I</a> 
+                - Tous droits réservés</p>
+            </li>
+            <li>
+                <a href="./src/pages/politique-confidentialite.html" target="_blank">Politique des données</a>
+            </li>
+        </ul>
+    </footer> 
+</body>
+
+</html>

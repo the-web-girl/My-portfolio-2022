@@ -1,0 +1,57 @@
+//Controls
+.controlls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+
+    .active-btn {
+        background-color: var(--color-secondary) !important;
+        transition: all .4s ease-in-out;
+
+        i {
+            color: var(--color-icon) !important;
+        }
+    }
+
+    .control {
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-white);
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: .7rem 0;
+        box-shadow: var(--box-shadow-1) ;
+        border: 2px solid var(--color-icon);
+
+        &:focus, &:active, &:hover {
+            outline: 4px solid var(--color-secondary);
+        }
+    
+        i {
+            font-size: 1.2rem;
+            color: var(--color-primary);
+            pointer-events: none;
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .controlls {
+        right: 2.5%;
+    }
+}
+@media (min-width: 451px) and (max-width: 970px) {
+    .controlls {
+        right: 3.5%;
+    } 
+    
+}

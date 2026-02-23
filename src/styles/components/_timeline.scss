@@ -1,0 +1,156 @@
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding-bottom: 3rem;
+    .hidden {
+        display: none;
+    }
+    .timeline-item {
+        position: relative;
+        padding-left: 3rem;
+        border-left: 1px solid var(--color-grey-4);
+        .fa-graduation-cap {
+            color: var(--color-primary);
+            display: block;
+        }
+        .fa-briefcase {
+            color: var(--color-grey0);
+        }
+        .tl-icon {
+            position: absolute;
+            left: -27px;
+            top: 0;
+            background-color: var(--color-secondary);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 1.3rem;
+            }
+        }
+        .modal-toggle, .modalclose {
+            cursor: pointer;
+            border: 2px solid var(--color-primary);
+
+            &:focus, &:active, &:hover {
+                outline: 4px solid var(--color-secondary);
+            }
+        }
+        [role="dialog"] {
+            box-sizing: border-box;
+            padding: 15px;
+            border: 1px solid #000;
+            background-color: #fff;
+            // min-width:300px;
+            width: 100%;
+            margin-bottom: 6rem;
+        }
+        .modalclose {
+            position: absolute;
+            right: 0px;
+            top: 0;
+            background-color: var(--color-secondary);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* native <dialog> element uses the ::backdrop pseudo-element */
+        /* dialog::backdrop, */
+        .dialog-backdrop {
+            display: none;
+            position: fixed;
+            overflow-y: auto;
+            margin-top: -5rem;
+            max-width: 550px;
+
+            .dialog_actions {
+                width: 100%;
+
+                .dial-img {
+                    max-width: 100%!important;
+                }
+            }
+        }
+        &:nth-last-of-type(1) {
+            margin-bottom: 3rem;
+        }
+        @media screen and (min-width: 640px) {
+            .dialog-backdrop {
+            background: rgba(0, 0, 0, 0.3);
+            }
+        }
+        .dialog-backdrop.active {
+            display: block;
+            z-index: 1000;
+        }
+        /* this is added to the body when a dialog is open */
+        .has-dialog {
+            overflow: hidden;
+        }
+          
+        .tl-duration{
+            padding: .2rem .6rem;
+            background-color: var(--color-grey-5);
+            border-radius: 15px;
+            display: inline-block;
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        h5{
+            padding: 1rem 0;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            font-weight: 600;
+            span{
+                color: var(--color-grey-2);
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+        }
+        p{
+            color: var(--color-grey-2);
+        }
+        .dropbtn {
+            background-color: transparent;
+            color: var(--color-white);
+            padding: .5rem;
+            font-size: 16px;
+            border: 2px solid var(--color-grey-1);
+            cursor: pointer;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+            border: 2px solid var(--color-btn-effect);
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            background-color: var(--color-black);
+            border: 1px dashed var(--color-btn-effect);
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            width: 100%;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .show {
+            display: block;
+        }
+    }
+}
+
